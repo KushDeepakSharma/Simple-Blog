@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: url("dark-backgrounds-15-cool-hd-background-and-wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+ 
+  }
+  
+  .container {
+    flex: 1 0 auto;
+  }
+  
+  .footer {
+    flex-shrink: 0;
+    background: grey;
+    opacity: 0.8;
+    color:white;
+  }
+  
+  .form > * {
+    margin: 10px;
+  }
+  
+  h3 {
+    margin: 10px;
+  }
+  
+  .check {
+    color: blue;
+    float: right;
+    cursor: pointer;
+  }
+  hr{
+      color:white;
+  }
