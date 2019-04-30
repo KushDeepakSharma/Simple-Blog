@@ -1,6 +1,10 @@
 <footer class="footer mt-auto py-3 text-center">
   <div class="container">
-    <span>&copy;Kush Deepak Sharma 2019</span>
+    <span>&copy;Kush Deepak Sharma 2019</span><br>
+    <span width=25%><a href="https://www.fb.com"><img src="Icons/fb.png"></a></span>
+    <span width=25%><a href="https://www.twitter.com"><img src="Icons/twi.png"></a></span>
+    <span width=25%><a href="https://www.pinterest.com"><img src="Icons/pin.png"></a></span>
+    <span width=25%><a href="https://in.linkedin.com"><img src="Icons/li.png"></a></span>
   </div>
 </footer>
 

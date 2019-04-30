@@ -17,9 +17,15 @@
             '<hr style="height: 3px;
             color: green;
             background-color: green;
-            border: none;"><form method="POST" action="deleteblog.php">
-            <h5 align="right"><button class="btn btn-danger" name='. $row['id'] .'><h5 style="color:white;">Delete</h5></button></h5>
-            </form>
+            border: none;"><div style="width:100%;">
+            <div style="float: left; width: 50%"> 
+            <form method="POST" action="editblog.php">
+            <h5 align="left"><button class="btn btn-warning" name='. $row['id'] .'><h5 style="color:white;">Edit</h5></button></h5>
+            </form> </div>
+            <div style="float: right; width: 50%"> 
+            <form method="POST" action="deleteblog.php">
+            <h5 align="right"><button class="btn btn-danger" name='. $row['id'] .'><h5 style="color:white;">Delete</h5></button></h5></form> </div>
+            </div>
             </li><hr>';
         }
         $post .= '</ul>';
