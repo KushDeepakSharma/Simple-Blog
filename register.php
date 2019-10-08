@@ -18,6 +18,21 @@
     return false;
     }
     }
+    function showHint(str) {
+    if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
     </script>
 <style>
 body{
@@ -108,7 +123,9 @@ color:lightblue;
         <br>
         <input type="Email" name="email" id="Email" placeholder="Email ID" required>
         <br>
-        <input type="password" name="password" id="psw" placeholder = "Password" name="Password" required>
+        <input type="password" name="password" id="psw" placeholder = "Password" name="Password" onkeyup="showHint(this.value)"  required>
+        <h5>Suggestions: <span id="txtHint"></span></h5>
+        <br>
         <input type="submit" value="Submit">
         <br>
         <a href="index.php">Existing User?</a>
